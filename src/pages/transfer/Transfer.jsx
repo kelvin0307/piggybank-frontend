@@ -110,7 +110,7 @@ function Transfer() {
     }
     return (
         <>
-            <h1>Overboeken</h1>
+            <h1 id="transfer-header" >Overboeken</h1>
             <div className="container">
                 <form onSubmit={submitForm}>
 
@@ -132,6 +132,7 @@ function Transfer() {
                         <label>
                             Naar rekening
                             <select
+                                id="account-selection"
                                 required
                                 name="toaccount"
                                 value={receiverAccountId}
@@ -189,6 +190,7 @@ function Transfer() {
                     <div className="form-row">
                         <label>Omschrijving
                             <textarea
+                                id="text-area-transfer"
                                 required
                                 name="description"
                                 value={description}
@@ -199,7 +201,7 @@ function Transfer() {
 
                     {/* Submit form */}
                     <div className="form-row">
-                        <button type="submit">Overboeken</button>
+                        <button id="transfer-button" type="submit">Overboeken</button>
                     </div>
                 </form>
             </div>

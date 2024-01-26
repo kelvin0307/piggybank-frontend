@@ -16,8 +16,8 @@ function Login() {
             <h1>Login</h1>
             <div className="container">
                 <h2>Kies een account</h2>
-                <div className="login__account-selector">
-                    <button onClick={() => loginAsUser(1)} className="login__account">
+                <div  className="login__account-selector">
+                    <button id="account1" onClick={() => loginAsUser(1)} className="login__account">
                         <div>
                             <img src="/images/melvin.png" alt="Melvin avatar" />
                         </div>
@@ -25,7 +25,7 @@ function Login() {
                             Melvin
                         </div>
                     </button>
-                    <button onClick={() => loginAsUser(2)} className="login__account">
+                    <button id="account2" onClick={() => loginAsUser(2)} className="login__account">
                         <div>
                             <img src="/images/sara.png" alt="Sara avatar" />
                         </div>
